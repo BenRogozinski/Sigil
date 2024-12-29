@@ -2,8 +2,10 @@
 
 A modified version of TIW's [UV-Static](https://github.com/TheTIW/UV-Static) specifically designed for the [Benrogo.net](https://benrogo.net) proxy network
 
+<p float="left">
 <img src="sigil_logo.png" alt="Sigil logo" height="200px">
 <img src="benrogo_logo.png" alt="Benrogo.net logo" height="200px">
+</p>
 
 ## Features
 
