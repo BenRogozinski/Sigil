@@ -2,14 +2,14 @@
 
 A modified version of TIW's [UV-Static](https://github.com/TheTIW/UV-Static) specifically designed for the [Benrogo.net](https://benrogo.net) proxy network
 
-<img src="benrogo_logo.png" alt="Benrogo.net logo" width="500px">
+<img src="sigil_logo.png" alt="Sigil logo" height="200px">
+<img src="benrogo_logo.png" alt="Benrogo.net logo" height="200px">
 
 ## Features
 
 - Flexible hosting options
 - Improved compatibility over UV-Static
 - Automatic link rotation
-- Built-in panic keys
 
 ## Deployment
 [Put hosting buttons here, TBD]
