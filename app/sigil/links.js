@@ -1,3 +1,5 @@
+"use strict";
+
 const sheetUrl = `https://docs.google.com/spreadsheets/d/${__uv$config.id}/gviz/tq?tqx=out:json`;
 
 async function fetchSheetData() {

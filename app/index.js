@@ -32,5 +32,7 @@ form.addEventListener("submit", async (event) => {
   }
 
   const url = search(address.value, searchEngine.value);
-  location.href = __uv$config.prefix + __uv$config.encodeUrl(url);
+  const sigilUrl =  __uv$config.prefix + __uv$config.encodeUrl(url)
+  localStorage.setItem("__sigil$URL", sigilUrl)
+  location.href = "/app/search.html";
 });
