@@ -1,15 +1,25 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Redirect Page</title>
-  <script>
-    window.onload = function() {
-      window.location.href = "/app/"; // Replace with your desired URL
-    };
-  </script>
-</head>
-<body>
-  <h1>Redirecting...</h1>
-  <p>If you are not redirected, <a href="/app/">click here</a>.</p>
-</body>
+   <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="icon" type="image/x-icon" href="/favicon.ico">
+      <link rel="stylesheet" href="/main.css">
+      <title>classroom - Google Search</title>
+   </head>
+   <body>
+      <form id="uf">
+         <input id="us" value="https://duckduckgo.com/?q=%s" type="hidden"> 
+         <input id="ua" type="text" placeholder="Search or type URL" class="form__input">
+      </form>
+      <div class="desc left-margin">
+         <p id="ue"></p>
+         <pre id="uc"></pre>
+      </div>
+      <script src="app/uv/uv.bundle.js" charset="UTF-8" defer></script>
+      <script src="app/uv/uv.config.js" charset="UTF-8" defer></script>
+      <script src="app/worker.js" charset="UTF-8" defer></script>
+      <script src="app/search.js" charset="UTF-8" defer></script>
+      <script src="app/index.js" charset="UTF-8" defer></script>
+      <script src="app/rotator.js" charset="UTF-8" defer></script>
+   </body>
 </html>

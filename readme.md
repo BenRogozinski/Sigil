@@ -9,9 +9,9 @@ A modified version of TIW's [UV-Static](https://github.com/TheTIW/UV-Static) spe
 
 ## Features
 
-- Flexible hosting options
 - Improved compatibility over UV-Static
-- Automatic link rotation
+- Automatically finds unblocked servers
+- Modified core files to avoid hash-based detection
 
 ## Deployment
 [Put hosting buttons here, TBD]
