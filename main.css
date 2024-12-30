@@ -4,6 +4,21 @@ html, body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+body {
+  background-color: transparent;
+  font-weight: bold;
+}
+
+#particles-js {
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+
 #overlay {
     position: fixed;
     top: 0;
@@ -29,8 +44,54 @@ html, body {
     width: 0px;
   }
   
-  @keyframes ellipsis {
-    to {
-      width: 4rem;
-    }
+@keyframes ellipsis {
+  to {
+    width: 4rem;
   }
+}
+
+#searchbar {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 50px;
+  border: 2px solid #E526CB;
+  border-radius: 20px;
+  box-shadow: 0 0 5px 1px #E526CB, 0 0 10px 2px #E526CB, 0 0 15px 3px #E526CB;
+}
+
+#ua {
+  background-color: transparent;
+  color: #ffffff;
+  font-size: 1.5rem;
+  position: relative;
+  top: 50%;
+  left: 16px;
+  border: none;
+  transform: translate(0, -50%);
+  width: 526px;
+  height: 44px;
+  font-weight: bold;
+  color: #24f2e1;
+}
+
+#search-icon {
+  top: 50%;
+  left: 10px;
+  transform: translate(0, -50%);
+  color: #24f2e1;
+  position: relative;
+  font-size: 2rem;
+  height: 44px;
+}
+
+#logo {
+  width: 300px;
+  height: 300px;
+  position: fixed;
+  top: calc(50% - 350px);
+  left: 50%;
+  transform: translate(-50%, 0);
+}

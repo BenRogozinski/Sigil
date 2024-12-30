@@ -4,12 +4,18 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="icon" type="image/x-icon" href="/favicon.ico">
       <link rel="stylesheet" href="/main.css">
+      <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
       <title>Google</title>
    </head>
    <body>
-      <form id="uf">
-         <input id="us" value="https://duckduckgo.com/?q=%s" type="hidden"> 
-         <input id="ua" type="text" placeholder="Search or type URL" class="form__input">
+      <div id="particles-js"></div>
+      <img id="logo" alt="Sigil logo" src="/sigil_logo.png">
+      <form id="uf" autocomplete="off" autocapitalize="off">
+         <input id="us" value="https://duckduckgo.com/?q=%s" type="hidden">
+         <div id="searchbar">
+            <i class="fas fa-search" id="search-icon"></i>
+            <input id="ua" type="text" placeholder="Search or type URL" class="form__input">
+         </div>
       </form>
       <div class="desc left-margin">
          <p id="ue"></p>
@@ -20,6 +26,12 @@
       <script src="app/worker.js" charset="UTF-8" defer></script>
       <script src="app/search.js" charset="UTF-8" defer></script>
       <script src="app/index.js" charset="UTF-8" defer></script>
-      <!-- <script src="app/sigil/links.js" charset="UTF-8" defer></script> -->
+      <script src="app/sigil/links.js" charset="UTF-8" defer></script>
+      <script src="/particles.min.js"></script>
+      <script>
+          particlesJS.load("particles-js", "/particles.json", function() {
+              console.log("callback - particles.js config loaded");
+          });
+      </script>
    </body>
 </html>

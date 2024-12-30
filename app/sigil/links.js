@@ -27,13 +27,14 @@ async function fetchSheetData() {
         const urlSet = rows.map(row => row.c.map(cell => (cell && cell.v) || ""))[0];
 
         for (const url of urlSet) {
+            const decodedUrl = atob(url)
             if (url !== "") {
                 try {
-                    const fetchResponse = await fetch(url);
+                    const fetchResponse = await fetch(decodedUrl);
                     const fetchResponseJson = await fetchResponse.json();
                     if (fetchResponse.ok && fetchResponseJson['versions'][0] === 'v1') {
                         console.log("WORKING URL FOUND");
-                        self.__uv$config.bare = url;
+                        self.__uv$config.bare = decodedUrl;
                         document.body.removeChild(overlay);
                         foundWorkingUrl = true;
                         break;
