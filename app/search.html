@@ -5,13 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
     <title>classroom - Google Search</title>
 </head>
 <body>
-    <iframe id="uvf" style="width: 100%; height: calc(100% - 40px);"></iframe>
-    <script src="/app/uv/uv.bundle.js" charset="UTF-8" defer></script>
-    <script src="/app/uv/uv.config.js" charset="UTF-8" defer></script>
-    <script src="/app/worker.js" charset="UTF-8" defer></script>
+    <div id="topbar">
+        <a href="/">
+            <div id="homebutton">
+                <img src="/sigil_logo.png">
+            </div>
+        </a>
+    </div>
+    <div id="neonbar"></div>
+    <iframe id="uvf" frameBorder="0"></iframe>
+    <script src="/app/uv/uv.bundle.js" charset="UTF-8"></script>
+    <script src="/app/uv/uv.config.js" charset="UTF-8"></script>
     <script src="/app/sigil/frame-handler.js" charset="UTF-8"></script>
 </body>
 </html>
